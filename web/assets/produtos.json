@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "produto": "Banho Pequeno",
+        "descricao": "Banho em cachorros pequenos",
+        "preco": 39.9,
+        "imagem": "https://i.pinimg.com/736x/c8/37/ec/c837eca7931056c01c26fcc79940e310.jpg"
+    },
+    {
+        "id": 2,
+        "produto": "Banho Médio",
+        "descricao": "Banho em cachorros médios",
+        "preco": 49.9,
+        "imagem": "https://i.pinimg.com/736x/86/f9/bf/86f9bf4dd85cb06e0a6f604ec89883f9.jpg"
+    },
+    {
+        "id": 3,
+        "produto": "Big Banho",
+        "descricao": "Banho em cachorros de grande porte",
+        "preco": 59.9,
+        "imagem": "https://i.pinimg.com/736x/f0/1e/85/f01e85572ade59734cd0d754b5f3559b.jpg"
+    },
+    {
+        "id": 4,
+        "produto": "Tosa Pequena",
+        "descricao": "Tosa de cachorros pequenos",
+        "preco": 29.9,
+        "imagem": "https://i.pinimg.com/736x/34/52/e0/3452e0b77d3b6d5a4eb5810137fed1a7.jpg"
+    },
+    {
+        "id": 5,
+        "produto": "Tosa média",
+        "descricao": "Tosa de cachorros médios",
+        "preco": 39.9,
+        "imagem": "https://i.pinimg.com/736x/52/3a/f0/523af09ee91dcb80b8bf82b6535ca877.jpg"
+    },
+    {
+        "id": 6,
+        "produto": "Big Tosa",
+        "descricao": "Tosa de cachorros de grande porte",
+        "preco": 49.9,
+        "imagem": "https://i.pinimg.com/736x/ea/bf/b3/eabfb36f39390b9271488d79bd380496.jpg"
+    },
+    {
+        "id": 7,
+        "produto": "Banho e tosa pequeno",
+        "descricao": "Banho e tosa de cachorros pequenos",
+        "preco": 59.9,
+        "imagem": "https://i.pinimg.com/736x/20/bd/b7/20bdb7c76afb1c7c6fdc5224ff0e07ac.jpg"
+    },
+    {
+        "id": 8,
+        "produto": "Banho e tosa médio",
+        "descricao": "Banho e tosa de cachorros médios",
+        "preco": 110.9,
+        "imagem": "https://i.pinimg.com/236x/79/82/d5/7982d536d96ad6a4a95538ecf76b75ea.jpg"
+    },
+    {
+        "id": 9,
+        "produto": "Coleira",
+        "descricao": "Coleira para cachorros",
+        "preco": 25.9,
+        "imagem": "https://i.pinimg.com/736x/56/18/e1/5618e155f329b50de7effe585ed560d5.jpg"
+    },
+    {
+        "id": 10,
+        "produto": "Casa de Gato",
+        "descricao": "Casa para gatos",
+        "preco": 85.9,
+        "imagem": "https://i.pinimg.com/736x/0b/5a/43/0b5a4373143cb0550d544742d7c9b081.jpg"
+    }
+]

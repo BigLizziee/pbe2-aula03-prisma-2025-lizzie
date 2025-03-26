@@ -1,19 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 :root {
-    --p1: #100E10;
-    --p2: #321110;
-    --p3: #955643;
-    --p4: #F7F4EB;
-    --pt1: rgba(0,0,0,0.7);
-    --pt2: rgba(255,255,255,0.7);
+    --c1: #3b2327;
+    --c2: #4b3231;
+    --c3: #955643;
+    --c4: #F7F4EB;
+    --t1: rgba(0,0,0,0.7);
+    --t2: rgba(255,255,255,0.7);
 }
 
 body {
+    background-color: var(--c4);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -24,77 +25,127 @@ body {
 
 header,
 footer {
+    background-color: var(--c1);
+    color: var(--c4);
     width: 100%;
     height: 10vh;
-    background-color: var(--p3);
-    color: var(--p1);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
-
-main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px
-}
-
-#cadastro {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#cadastro form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-
-    & input,
-    button {
-        padding: 10px;
-        border-radius: 10px;
-        margin: 5px;
-    }
 
     & button {
+        background-color: var(--c3);
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px var(--t2);
+        font-weight: bold;
         cursor: pointer;
     }
 }
 
-#cards {
+main {
     width: 100%;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
     overflow-y: auto;
+}
 
-    & div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:10px;
-        background-color: var(--p3);
-        color: var(--p1);
-        padding: 10px;
-        border-radius: 10px;
+.card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--c2);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--t2);
+    gap: 10px;
 
+    & img {
+        width: 250px;
+        height: 200px;
+    }
+
+    & button {
+        background-color: var(--c3);
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px var(--t2);
+        font-weight: bold;
+        cursor: pointer;
     }
 }
 
-@media screen and (max-width: 800px) {
-    main {
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--t2);
+}
+
+.janela {
+    width: 40%;
+    height: fit-content;
+    background-color: var(--c4);
+    box-shadow: 0 0 5px var(--t1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    & div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    & button {
+        width: fit-content;
+        background-color: var(--c3);
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px var(--t2);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    & form {
+        width: 100%;
+        display: flex;
         flex-direction: column;
-        overflow-y:auto;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+input{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--t2);
+    font-weight: bold;
+    width: 95%;
+}
+
+.oculto{
+    display: none;
+}
+
+@media screen and (max-width: 770px){
+    .janela{
+        min-width: 90%;
     }
 }
